@@ -1,0 +1,29 @@
+/* ---------------------------------------- */
+/* ==          VARIABLES             */
+/*---------------------------------------- */
+
+$breakpoints: (
+	tablet: 768px,
+	desktop: 992px,
+	big-desktop: 1200px,
+);
+
+/* ---------------------------------------- */
+/* ==        GENERAL MIXINS            */
+/*---------------------------------------- */
+/* This is a mixin that will be used to create a breakpoint for the desktop. */
+@mixin tablet-breakpoint {
+	@media screen and (min-width: map-get($breakpoints, tablet)) {
+		@content;
+	}
+}
+@mixin desktop-breakpoint {
+	@media screen and (min-width: map-get($breakpoints, desktop)) {
+		@content;
+	}
+}
+@mixin big-desktop-breakpoint {
+	@media screen and (min-width: map-get($breakpoints, big-desktop)) {
+		@content;
+	}
+}

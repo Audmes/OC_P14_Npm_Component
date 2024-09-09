@@ -1,0 +1,80 @@
+{
+    "name": "react-data-table-by-audmes",
+    "version": "0.1.0",
+    "private": false,
+    "description": "This is a react component to render a table using two arrays of objects",
+    "main": "dist/main.min.js",
+    "module": "dist/main.es.min.js",
+    "source": "src/index.jsx",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Audmes/OC_P14_Npm_Component.git"
+    },
+    "keywords": [
+        "react-data-table",
+        "data-table",
+        "audmes"
+    ],
+    "author": "Audrey Mesnage",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Audmes/OC_P14_Npm_Component/issues"
+    },
+    "homepage": "https://github.com/Audmes/OC_P14_Npm_Component#readme",
+    "scripts": {
+        "build": "rollup -c",
+        "build-watch": "rollup -c -w",
+        "start-playground": "cd playground && npm run start",
+        "i-all": "npm i && cd playground && npm i",
+        "dev": "npm-run-all --parallel build-watch start-playground",
+        "docs": "jsdoc -c jsdoc.conf.json"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.25.6",
+        "@babel/preset-react": "^7.24.7",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@rollup/plugin-commonjs": "^26.0.1",
+        "@rollup/plugin-image": "^3.0.3",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-terser": "^0.4.4",
+        "jsdoc": "^4.0.3",
+        "npm-run-all": "^4.1.5",
+        "prop-types": "^15.8.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-scripts": "5.0.1",
+        "rollup": "^2.79.1",
+        "rollup-plugin-delete": "^2.1.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-scss": "^4.0.0",
+        "sass": "^1.78.0"
+    },
+    "peerDependencies": {
+        "react": "18.3.1",
+        "react-dom": "18.3.1"
+    },
+    "directories": {
+        "doc": "docs"
+    },
+    "dependencies": {
+        "react-data-table-by-audmes": "^0.1.0"
+    }
+}
