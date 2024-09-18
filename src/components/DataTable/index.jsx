@@ -223,7 +223,7 @@ function DataTable({
 						Search:{" "}
 					</label>
 					<input
-						id={tableId + "-table-search"}
+						id={tableId + "-table-search-input"}
 						className={dataTablesSearchInputClassName}
 						name={tableId + "-table-search"}
 						type="search"

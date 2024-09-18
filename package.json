@@ -1,6 +1,6 @@
 {
     "name": "react-data-table-by-audmes",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "private": false,
     "description": "This is a react component to render a table using two arrays of objects",
     "main": "dist/main.min.js",
