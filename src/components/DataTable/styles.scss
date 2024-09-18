@@ -28,6 +28,11 @@
 			}
 		}
 	}
+	&-select {
+		&-label {
+			visibility: hidden;
+		}
+	}
 	&-info {
 		padding-top: 0.8em;
 		@include tablet-breakpoint {

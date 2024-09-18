@@ -49,6 +49,7 @@ function DataTable({
 	dataTablesSearchWrapperClassName = "data-tables-search-wrapper",
 	dataTablesSearchLabelClassName = "form-label",
 	dataTablesSearchInputClassName = "form-input",
+	dataTablesSelectLabelClassName = "data-tables-select-label",
 	dataTablesInfoClassName = "data-tables-info",
 	dataTablesPaginateClassName = "data-tables-paginate",
 	dataTableClassName = "data-table",
@@ -238,14 +239,20 @@ function DataTable({
 			{sortSelectionEnabled && (
 				<div className="only-mobile">
 					{"Sort by: "}
-					<select value={sortColumn} onChange={(e) => setSortColumn(e.target.value)}>
+					<label htmlFor={"-data-select"} className={dataTablesSelectLabelClassName}>
+						data
+					</label>
+					<select id={"-data-select"} value={sortColumn} onChange={(e) => setSortColumn(e.target.value)}>
 						{columns.map((option, index) => (
 							<option key={option + "-" + index} value={option.id}>
 								{option.name}
 							</option>
 						))}
 					</select>
-					<select value={sortOrder} onChange={(e) => setSortOrder(e.target.value)}>
+					<label htmlFor={"-ascending-select"} className={dataTablesSelectLabelClassName}>
+						Ascending
+					</label>
+					<select id={"-ascending-select"} value={sortOrder} onChange={(e) => setSortOrder(e.target.value)}>
 						<option value="asc">Ascending</option>
 						<option value="desc">Descending</option>
 					</select>
