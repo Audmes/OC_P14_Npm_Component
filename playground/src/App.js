@@ -10,7 +10,7 @@ const App = () => {
 	];
 
 	const employees = [
-		{ lastName: "Doe", firstName: "John", city: "New York", birthday: "1980-01-02" },
+		{ firstName: "John", lastName: "Doe",  city: "New York", birthday: "1980-01-02" },
 		{ firstName: "Jane", lastName: "Doe", city: "Los Angeles", birthday: "1985-02-14" },
 		{ firstName: "John", lastName: "Smith", city: "Chicago", birthday: "1970-11-22" },
 		{ firstName: "Jane", lastName: "Smith", city: "Houston", birthday: "1975-09-30" },

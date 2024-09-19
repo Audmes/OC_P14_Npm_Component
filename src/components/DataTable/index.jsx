@@ -91,7 +91,12 @@ function DataTable({
 				else {
 					const stringA = String(a[column]).toLowerCase();
 					const stringB = String(b[column]).toLowerCase();
-					return direction === "asc" ? stringA > stringB : stringB > stringA;
+					
+					// if (stringA < stringB) return -1; //sort string ascending
+  					// else if (stringA > stringB) return 1; //sort string descending
+  					// return 0; //default return value (no sorting)
+					
+					return direction === "asc" ? stringA.localeCompare(stringB) : -(stringA.localeCompare(stringB));
 				}
 			});
 		}
